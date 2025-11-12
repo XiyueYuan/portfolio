@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <rect width="200" height="200" fill="#1e3a8a"/>
+  <text x="100" y="80" text-anchor="middle" dominant-baseline="middle" fill="white" font-family="serif" font-size="32" font-weight="bold">南京</text>
+  <text x="100" y="120" text-anchor="middle" dominant-baseline="middle" fill="white" font-family="serif" font-size="32" font-weight="bold">一中</text>
+</svg>
