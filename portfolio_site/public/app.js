@@ -129,7 +129,8 @@ if (form) {
     const fd = new FormData(form);
     const payload = { name: fd.get('name'), message: fd.get('message') };
     try {
-      const res = await fetch('http://localhost:5050/api/messages', {
+      const api = location.hostname === 'localhost' ? 'http://localhost:5050/api/messages' : '/api/messages';
+      const res = await fetch(api, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)
