@@ -10,6 +10,7 @@ So I decided that on evanyuan.dev/blog I’ll put the good stuff — the positiv
 The whole blog is built with Node.js, the classic HTML/CSS/JS trio. I’m not that familiar with front-end, so I crash-learned it in two days and pieced together something simple. The back-end is a lightweight Flask setup for handling forms — that’s the GuestBook section under the main evanyuan.dev domain.
 
 The blog has three sections: Miscellany, On Coding, and On Music. Realistically, On Coding will probably grow the fastest — I’ll record parts of my learning path: fun algorithms, small insights from Kaggle competitions, that kind of thing. Music-wise, I’ll talk about the classical pieces I love. Recently I’ve been listening to a lot of Bruckner, so maybe I’ll write something if I have time.
+
 Miscellany will be the slowest to update. This Hello World post belongs there. Knowing that this section is public makes me very deliberate — I can’t write as freely. I’ll keep a private domain for the things I actually want to rant about. When I find something interesting in econ, politics, or history, maybe I’ll move a cleaned-up version over here.
 That’s about it.
 
