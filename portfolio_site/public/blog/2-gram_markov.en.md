@@ -127,4 +127,5 @@ We obtain something like:
 With this setup, we can simply draw a random number each time to determine the next word.  
 As long as the training set is sufficiently large, the resulting language model will become reasonably accurate.
 
+*2025.11.14*
 *Written in the Row 2 / Col 1 cubicle on the right side of the second floor of the Reg, University of Chicago.*

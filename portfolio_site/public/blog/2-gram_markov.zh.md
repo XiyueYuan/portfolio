@@ -118,4 +118,5 @@ def ngram_chain(lyrics, n):
 确保训练集够大，那么这个语言模型将会够精准。
 
 
+*2025.11.14*
 *写于芝加哥大学Reg图书馆二楼右边Row 2/Col 1的cubic里*
