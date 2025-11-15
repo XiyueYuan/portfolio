@@ -98,7 +98,10 @@ async function loadPost(p) {
     const rawHtml = marked.parse(md);
     const safeHtml = (typeof window !== 'undefined' && window.DOMPurify) ? DOMPurify.sanitize(rawHtml) : rawHtml;
     innerEl.innerHTML = safeHtml;
-    if (typeof window !== 'undefined' && window.hljs) hljs.highlightAll();
+    if (typeof window !== 'undefined' && window.hljs) {
+      hljs.highlightAll();
+    }
+    enhanceCodeBlocks();
     if (typeof window !== 'undefined' && window.renderMathInElement) {
       renderMathInElement(innerEl, {
         delimiters: [
@@ -222,5 +225,26 @@ function buildAnchorsAndToc() {
     li.style.marginLeft = (h.tagName === 'H2') ? '8px' : (h.tagName === 'H3') ? '16px' : (h.tagName === 'H4') ? '24px' : '0px';
     li.appendChild(link);
     listEl.appendChild(li);
+  });
+}
+
+function enhanceCodeBlocks() {
+  const pres = innerEl.querySelectorAll('pre');
+  pres.forEach(pre => {
+    if (!pre.parentElement.classList.contains('code-wrap')) {
+      const wrap = document.createElement('div');
+      wrap.className = 'code-wrap';
+      pre.parentElement.insertBefore(wrap, pre);
+      wrap.appendChild(pre);
+      const btn = document.createElement('button');
+      btn.className = 'copy-btn';
+      btn.textContent = 'Copy';
+      btn.onclick = () => {
+        const code = pre.querySelector('code');
+        const text = code ? code.textContent : pre.textContent;
+        navigator.clipboard.writeText(text).then(() => { btn.textContent = 'Copied'; setTimeout(() => btn.textContent = 'Copy', 1200); });
+      };
+      wrap.appendChild(btn);
+    }
   });
 }

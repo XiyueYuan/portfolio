@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@5.2.0/github-markdown-dark.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/github-dark-dimmed.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/vs2015.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <style>
     body { font-family: 'EB Garamond', Garamond, serif; }
@@ -43,6 +43,9 @@
     .read-more { display: inline-block; margin-top: 10px; color: var(--text); text-decoration: none; border-bottom: 1px solid rgba(255,255,255,.25); }
     .read-more:hover { border-bottom-color: rgba(255,255,255,.5); }
     .post-content { margin-top: 24px; line-height: 1.7; }
+    .copy-btn { position: absolute; top: 8px; right: 8px; padding: 6px 10px; border-radius: 8px; border: 1px solid rgba(255,255,255,.15); background: rgba(0,0,0,.2); color: var(--text); font-size: .8rem; cursor: pointer; }
+    .copy-btn:hover { background: rgba(255,255,255,.08); }
+    .code-wrap { position: relative; }
 
     .post-toolbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; }
     .back-btn { text-decoration: none; }
@@ -110,7 +113,7 @@
     <span>© 2025 Evan X. Yuan</span>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/lib/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.5/dist/purify.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
