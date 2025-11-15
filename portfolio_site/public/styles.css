@@ -14,13 +14,13 @@ body {
   color: var(--text);
   background: linear-gradient(120deg, var(--bg-start), var(--bg-end));
   overflow-x: hidden;
-  font-size: 18px; /* base size up */
+  font-size: 16px; /* base size up */
   scroll-behavior: smooth;
 }
 
 /* Global scale: enlarge all content 1.2x while fitting viewport width */
 main, .footer {
-  transform: scale(1.2);
+  transform: scale(1);
   transform-origin: top center;
   width: calc(100% / 1.2);
   margin: 0 auto;
@@ -221,8 +221,9 @@ h3 { font-size: 28px; margin: 48px 0 20px; color: var(--muted); }
   content: "";
   position: absolute;
   inset:0;
+  transform: translateY(-20px);
   background: url('/icons/background.svg') center/cover no-repeat;
-  opacity: 0.18;
+  opacity: 0.15;
   z-index: 0;
   background-position: right -80px top 0px;
 }
